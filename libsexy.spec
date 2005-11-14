@@ -3,17 +3,17 @@ Summary(pl):	Zestaw dodatkowych kontrolek dla GTK+
 Name:		libsexy
 Version:	0.1.4
 Release:	1
-License:	GPL v.2.1
+License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://osiris.chipx86.com/projects/libsexy/releases/%{name}-%{version}.tar.gz
 # Source0-md5:	2fb4072a740b9ab4ad2ff5a323f7fd3d
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
-BuildRequires:	enchant-devel
-BuildRequires:	gtk+2-devel
-BuildRequires:	iso-codes
+BuildRequires:	enchant-devel >= 0.4.0
+BuildRequires:	gtk+2-devel >= 2:2.4.0
+BuildRequires:	iso-codes >= 0.35
 BuildRequires:	libtool
-BuildRequires:	libxml2-devel
+BuildRequires:	libxml2-devel >= 2.0
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -28,6 +28,9 @@ Summary:	Header files for libsexy library
 Summary(pl):	Pliki nag³ówkowe biblioteki libsexy
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	enchant-devel >= 0.4.0
+Requires:	gtk+2-devel >= 2:2.4.0
+Requires:	libxml2-devel >= 2.0
 
 %description devel
 Header files for libsexy library.
