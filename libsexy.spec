@@ -7,6 +7,7 @@ License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://osiris.chipx86.com/projects/libsexy/releases/%{name}-%{version}.tar.gz
 # Source0-md5:	2fb4072a740b9ab4ad2ff5a323f7fd3d
+URL:		http://chipx86.com/wiki/Libsexy
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
 BuildRequires:	enchant-devel >= 0.4.0
