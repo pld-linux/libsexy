@@ -2,7 +2,7 @@ Summary:	Set of additional widgets for GTK+
 Summary(pl):	Zestaw dodatkowych kontrolek dla GTK+
 Name:		libsexy
 Version:	0.1.8
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://releases.chipx86.com/libsexy/libsexy/%{name}-%{version}.tar.gz
@@ -10,11 +10,11 @@ Source0:	http://releases.chipx86.com/libsexy/libsexy/%{name}-%{version}.tar.gz
 URL:		http://chipx86.com/wiki/Libsexy
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
-BuildRequires:	enchant-devel >= 0.4.0
-BuildRequires:	gtk+2-devel >= 2:2.4.0
+BuildRequires:	enchant-devel >= 1.2.6
+BuildRequires:	gtk+2-devel >= 2:2.10.0
 BuildRequires:	iso-codes >= 0.35
 BuildRequires:	libtool
-BuildRequires:	libxml2-devel >= 2.0
+BuildRequires:	libxml2-devel >= 1:2.6.26
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -29,9 +29,9 @@ Summary:	Header files for libsexy library
 Summary(pl):	Pliki nag³ówkowe biblioteki libsexy
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	enchant-devel >= 0.4.0
-Requires:	gtk+2-devel >= 2:2.4.0
-Requires:	libxml2-devel >= 2.0
+Requires:	enchant-devel >= 1.2.6
+Requires:	gtk+2-devel >= 2:2.10.0
+Requires:	libxml2-devel >= 1:2.6.26
 
 %description devel
 Header files for libsexy library.
@@ -60,6 +60,7 @@ Statyczna biblioteka libsexy.
 %{__autoconf}
 %{__autoheader}
 %{__automake}
+LDFLAGS="%{rpmldflags} -Wl,--as-needed"
 %configure \
 	 --with-html-dir=%{_gtkdocdir}
 %{__make}
