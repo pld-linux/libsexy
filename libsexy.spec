@@ -1,5 +1,5 @@
 Summary:	Set of additional widgets for GTK+
-Summary(pl):	Zestaw dodatkowych kontrolek dla GTK+
+Summary(pl.UTF-8):   Zestaw dodatkowych kontrolek dla GTK+
 Name:		libsexy
 Version:	0.1.10
 Release:	1
@@ -22,12 +22,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Set of graphical widgets for GTK+ applications.
 
-%description -l pl
-Zestaw kontrolek graficznych dla programÛw opartych o GTK+.
+%description -l pl.UTF-8
+Zestaw kontrolek graficznych dla program√≥w opartych o GTK+.
 
 %package devel
 Summary:	Header files for libsexy library
-Summary(pl):	Pliki nag≥Ûwkowe biblioteki libsexy
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe biblioteki libsexy
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	enchant-devel >= 1.2.6
@@ -37,19 +37,19 @@ Requires:	libxml2-devel >= 1:2.6.26
 %description devel
 Header files for libsexy library.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe biblioteki libsexy.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe biblioteki libsexy.
 
 %package static
 Summary:	Static libsexy library
-Summary(pl):	Statyczna biblioteka libsexy
+Summary(pl.UTF-8):   Statyczna biblioteka libsexy
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libsexy library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka libsexy.
 
 %prep
