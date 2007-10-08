@@ -1,13 +1,10 @@
-diff -urN libsexy-0.1.11.org/libsexy.pc.in libsexy-0.1.11/libsexy.pc.in
---- libsexy-0.1.11.org/libsexy.pc.in	2005-11-10 11:21:18.000000000 +0100
-+++ libsexy-0.1.11/libsexy.pc.in	2007-10-06 17:16:11.844090011 +0200
-@@ -6,7 +6,7 @@
+--- libsexy-0.1.11/libsexy.pc.in.orig	2005-11-10 11:21:18.000000000 +0100
++++ libsexy-0.1.11/libsexy.pc.in	2007-10-08 23:13:24.628782748 +0200
+@@ -1,6 +1,6 @@
+ prefix=@prefix@
+ exec_prefix=${prefix}
+-libdir=${exec_prefix}/lib
++libdir=@libdir@
+ includedir=${prefix}/include
+ 
  Name: libsexy
- Description: Doing naughty things to good widgets
- Version: @VERSION@
--Libs: -L${libdir} -lsexy @PACKAGE_LIBS@
--Cflags: -I${includedir} @PACKAGE_CFLAGS@
-+Libs: -lsexy @PACKAGE_LIBS@
-+Cflags: @PACKAGE_CFLAGS@
- 
- 
