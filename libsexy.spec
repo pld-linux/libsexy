@@ -8,7 +8,7 @@ Group:		Libraries
 Source0:	http://releases.chipx86.com/libsexy/libsexy/%{name}-%{version}.tar.gz
 # Source0-md5:	33c079a253270ec8bfb9508e4bb30754
 Patch0:		%{name}-pc.patch
-URL:		http://chipx86.com/wiki/Libsexy
+URL:		http://chipx86.com/w/index.php/Libsexy
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
 BuildRequires:	enchant-devel >= 1.2.6
