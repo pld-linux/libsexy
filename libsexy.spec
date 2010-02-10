@@ -11,6 +11,7 @@ Patch0:		%{name}-pc.patch
 URL:		http://chipx86.com/w/index.php/Libsexy
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
+BuildRequires:	docbook-dtd412-xml
 BuildRequires:	enchant-devel >= 1.2.6
 BuildRequires:	gtk+2-devel >= 2:2.10.3
 BuildRequires:	gtk-doc >= 1.7
