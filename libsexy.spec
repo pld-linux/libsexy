@@ -2,12 +2,13 @@ Summary:	Set of additional widgets for GTK+
 Summary(pl.UTF-8):	Zestaw dodatkowych kontrolek dla GTK+
 Name:		libsexy
 Version:	0.1.11
-Release:	9
+Release:	10
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://releases.chipx86.com/libsexy/libsexy/%{name}-%{version}.tar.gz
 # Source0-md5:	33c079a253270ec8bfb9508e4bb30754
 Patch0:		%{name}-pc.patch
+Patch1:		%{name}-configure.ac.patch
 URL:		http://chipx86.com/w/index.php/Libsexy
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
@@ -69,6 +70,7 @@ Dokumentacja API biblioteki libsexy.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p0
 
 %build
 %{__libtoolize}
