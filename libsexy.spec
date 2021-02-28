@@ -60,9 +60,7 @@ Summary:	libsexy API documentation
 Summary(pl.UTF-8):	Dokumentacja API biblioteki libsexy
 Group:		Documentation
 Requires:	gtk-doc-common
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description apidocs
 libsexy API documentation.
